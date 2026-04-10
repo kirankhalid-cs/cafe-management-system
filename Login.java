@@ -97,7 +97,7 @@ public class Login extends JFrame implements ActionListener
           {
             JOptionPane.showMessageDialog(null, "You have successfully loged in.");
             f.setVisible(false);
-           // new HomePage().setVisible(true);
+        
           }
           else
           {
