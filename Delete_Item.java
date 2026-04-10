@@ -30,14 +30,14 @@ public class Delete_Item extends JFrame implements ActionListener {
     while (rest.next()) {
         y[i][0] = rest.getString("item_id");
         y[i][1] = rest.getString("source");
-        y[i][2] = rest.getString("ItemName"); // <-- corrected
+        y[i][2] = rest.getString("ItemName"); 
         y[i][3] = rest.getString("username");
         y[i][4] = rest.getString("name");
         y[i][5] = rest.getString("price");
         i++;
     }
 
-    // Table should be initialized here, inside try block
+   
     t = new JTable(y, x);
     t.setBackground(Color.BLACK);
     t.setForeground(Color.WHITE);
