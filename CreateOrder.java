@@ -55,7 +55,7 @@ public class CreateOrder extends JFrame implements ActionListener {
         ch3 = new Choice();
         ch3.setFont(f1);
 
-        // Mouse listener for source choice to populate item names
+       
         ch1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -172,7 +172,7 @@ public class CreateOrder extends JFrame implements ActionListener {
         bt1.addActionListener(this);
         bt2.addActionListener(this);
 
-        // Panel 1: Heading
+        
         p1 = new JPanel();
         p1.setLayout(new GridLayout(1, 1, 10, 10));
         p1.add(l1);
