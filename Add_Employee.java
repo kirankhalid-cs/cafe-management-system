@@ -167,7 +167,7 @@ public class Add_Employee extends JFrame implements ActionListener {
                 obj.stm.executeUpdate(q);
                 JOptionPane.showMessageDialog(null, "Your details are successfully inserted.");
                 frame.setVisible(false);
-            } catch (Exception ex) {  // <- Fixed capitalization from 'Catch' to 'catch'
+            } catch (Exception ex) {  
                 ex.printStackTrace();
             }
         }
