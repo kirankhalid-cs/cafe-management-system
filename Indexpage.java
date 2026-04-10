@@ -32,7 +32,7 @@ public class Indexpage extends JFrame implements ActionListener {
         bt1 = new JButton("Login");
         bt2 = new JButton("Login");
         bt1.setFont(f);
-        bt2.setFont(f); // Fixed: Set font for bt2
+        bt2.setFont(f); 
 
         bt1.addActionListener(this);
         bt2.addActionListener(this);
@@ -40,7 +40,7 @@ public class Indexpage extends JFrame implements ActionListener {
         
         ImageIcon ic = null;
         try {
-            ic = new ImageIcon(ClassLoader.getSystemResource("cafe/management/system/icon/index2.jpeg")); // Ensure "index2.jpeg" is in the correct folder
+            ic = new ImageIcon(ClassLoader.getSystemResource("cafe/management/system/icon/index2.jpeg")); 
         } catch (Exception e) {
             System.out.println("Image not found");
         }
@@ -50,7 +50,7 @@ public class Indexpage extends JFrame implements ActionListener {
             ImageIcon ic1 = new ImageIcon(img);
             L4 = new JLabel(ic1);
         } else {
-            L4 = new JLabel("No Image"); // Fallback if image not found
+            L4 = new JLabel("No Image"); 
         }
 
   
@@ -86,7 +86,7 @@ public class Indexpage extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == bt1) {
-            this.setVisible(false); // Fixed: Corrected method name
+            this.setVisible(false);
             new AdminSection().setVisible(true);
         }
         if (e.getSource() == bt2) {
